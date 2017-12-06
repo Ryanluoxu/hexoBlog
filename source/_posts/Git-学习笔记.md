@@ -131,3 +131,41 @@ git fetch [remote-name]
 ```
 git pull
 ```
+
+### Push existing project to github ###
+
+1. Create new repo in github called : hexoBlog
+2. git bash
+```bash
+$ git init
+$ git add --all
+$ git commit
+$ git remote add origin https://github.com/Ryanluoxu/hexoBlog.git
+$ git push
+$ git status
+```
+4. there is one folder always in `untracked` mode. 
+```
+modified:   next (modified content, untracked content)
+```
+5. realised `next` is cloned from github. Itself contains a .git folder.
+6. remove `next` local git repo.
+```bash
+$ cd theme/next/
+$ rm -rf .git
+$ cd ../..
+$ git status
+
+nothing to commit, working tree clean
+
+$ git push
+
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+
+$ git push -u origin master		#org
+
+```
