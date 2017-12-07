@@ -64,3 +64,7 @@ tail -100f <file>
 ```bash
 tail -100f <file> | grep "<content>"
 ```
+
+
+
+
