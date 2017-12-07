@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="blog,hexo,ubuntu,migrate," />
+  <meta name="keywords" content="github,git,notes," />
 
 
 
@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="My current working space for this hexo blog is in windows 10. This is how I migrate to Ubuntu. upload project to github create new repo in github called : hexoB">
-<meta name="keywords" content="blog,hexo,ubuntu,migrate">
+<meta name="description" content="Switching remote URLs between SSH and HTTPSCheck existing remote:  If SSH: 123$ git remote -vorigin  git@github.com:USERNAME/REPOSITORY.git (fetch)origin  git@g">
+<meta name="keywords" content="github,git,notes">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Clone Blog to Ubuntu">
-<meta property="og:url" content="https://ryanluoxu.github.io/2017/12/07/Clone-Blog-to-Ubuntu/index.html">
+<meta property="og:title" content="Github Learning">
+<meta property="og:url" content="https://ryanluoxu.github.io/2017/12/07/Github-Learning/index.html">
 <meta property="og:site_name" content="猎 日">
-<meta property="og:description" content="My current working space for this hexo blog is in windows 10. This is how I migrate to Ubuntu. upload project to github create new repo in github called : hexoBlog If any folders inside are cloned fro">
+<meta property="og:description" content="Switching remote URLs between SSH and HTTPSCheck existing remote:  If SSH: 123$ git remote -vorigin  git@github.com:USERNAME/REPOSITORY.git (fetch)origin  git@github.com:USERNAME/REPOSITORY.git (push)">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2017-12-07T03:48:02.317Z">
+<meta property="og:updated_time" content="2017-12-07T08:03:53.105Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Clone Blog to Ubuntu">
-<meta name="twitter:description" content="My current working space for this hexo blog is in windows 10. This is how I migrate to Ubuntu. upload project to github create new repo in github called : hexoBlog If any folders inside are cloned fro">
+<meta name="twitter:title" content="Github Learning">
+<meta name="twitter:description" content="Switching remote URLs between SSH and HTTPSCheck existing remote:  If SSH: 123$ git remote -vorigin  git@github.com:USERNAME/REPOSITORY.git (fetch)origin  git@github.com:USERNAME/REPOSITORY.git (push)">
 
 
 
@@ -120,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="https://ryanluoxu.github.io/2017/12/07/Clone-Blog-to-Ubuntu/"/>
+  <link rel="canonical" href="https://ryanluoxu.github.io/2017/12/07/Github-Learning/"/>
 
 
 
 
 
-  <title>Clone Blog to Ubuntu | 猎 日</title>
+  <title>Github Learning | 猎 日</title>
   
 
 
@@ -273,7 +273,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://ryanluoxu.github.io/2017/12/07/Clone-Blog-to-Ubuntu/">
+    <link itemprop="mainEntityOfPage" href="https://ryanluoxu.github.io/2017/12/07/Github-Learning/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Ryan Luo Xu 罗旭">
@@ -290,7 +290,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Clone Blog to Ubuntu</h1>
+          <h1 class="post-title" itemprop="name headline">Github Learning</h1>
         
 
         <div class="post-meta">
@@ -302,7 +302,7 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-12-07T12:21:12+08:00">
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-12-07T14:45:54+08:00">
                 2017-12-07
               </time>
             
@@ -318,7 +318,7 @@
               
                 <span class="post-meta-item-text">Post modified&#58;</span>
               
-              <time title="Post modified" itemprop="dateModified" datetime="2017-12-07T11:48:02+08:00">
+              <time title="Post modified" itemprop="dateModified" datetime="2017-12-07T16:03:53+08:00">
                 2017-12-07
               </time>
             
@@ -337,8 +337,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/搭建博客/" itemprop="url" rel="index">
-                    <span itemprop="name">搭建博客</span>
+                  <a href="/categories/Git/" itemprop="url" rel="index">
+                    <span itemprop="name">Git</span>
                   </a>
                 </span>
 
@@ -355,8 +355,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2017/12/07/Clone-Blog-to-Ubuntu/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count gitment-comments-count" data-xid="/2017/12/07/Clone-Blog-to-Ubuntu/" itemprop="commentsCount"></span>
+                <a href="/2017/12/07/Github-Learning/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count gitment-comments-count" data-xid="/2017/12/07/Github-Learning/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -389,29 +389,23 @@
       
 
       
-        <p>My current working space for this hexo blog is in windows 10.</p>
-<p>This is how I migrate to Ubuntu.</p>
-<h1 id="upload-project-to-github"><a href="#upload-project-to-github" class="headerlink" title="upload project to github"></a>upload project to github</h1><ol>
-<li>create new repo in github called : hexoBlog</li>
-<li>If any folders inside are cloned from github. Need to remove git related files:<ul>
-<li>.git</li>
-<li>.gitignore</li>
-<li>.github/</li>
-<li>…<a id="more"></a></li>
+        <h2 id="Switching-remote-URLs-between-SSH-and-HTTPS"><a href="#Switching-remote-URLs-between-SSH-and-HTTPS" class="headerlink" title="Switching remote URLs between SSH and HTTPS"></a>Switching remote URLs between SSH and HTTPS</h2><p>Check existing remote:</p>
+<ul>
+<li><p>If SSH:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ git remote -v</span><br><span class="line">origin  git@github.com:USERNAME/REPOSITORY.git (fetch)</span><br><span class="line">origin  git@github.com:USERNAME/REPOSITORY.git (push)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>If HTTPS:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ git remote -v</span><br><span class="line">origin  https://github.com/USERNAME/REPOSITORY.git (fetch)</span><br><span class="line">origin  https://github.com/USERNAME/REPOSITORY.git (push)</span><br></pre></td></tr></table></figure>
+</li>
 </ul>
-</li>
-<li><p>open git bash on blog folder, and run:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ git init</span><br><span class="line">$ git add --all</span><br><span class="line">$ git commit</span><br><span class="line">$ git remote add origin https://github.com/Ryanluoxu/hexoBlog.git</span><br><span class="line">$ git push</span><br></pre></td></tr></table></figure>
-</li>
-<li><p><code>git push</code> may face “fatal: The current branch master has no upstream branch”. Run:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git push -u origin master</span><br></pre></td></tr></table></figure>
-</li>
-</ol>
-<p>Now project is on the github.</p>
-<h1 id="clone-project-to-Ubuntu"><a href="#clone-project-to-Ubuntu" class="headerlink" title="clone project to Ubuntu"></a>clone project to Ubuntu</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ git push -u origin master	<span class="comment">#1 install git</span></span><br><span class="line">$ mkdir ~/git			<span class="comment">#2 create folder git under home</span></span><br><span class="line">$ <span class="built_in">cd</span> ~/git</span><br><span class="line">$ git <span class="built_in">clone</span> https://github.com/Ryanluoxu/hexoBlog.git	<span class="comment">#3 clone project from github</span></span><br></pre></td></tr></table></figure>
-<p>Now local working space is : ~/git/hexoblog/</p>
-<h1 id="installation"><a href="#installation" class="headerlink" title="installation"></a>installation</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh | bash	<span class="comment">#1 install Node Version Manager</span></span><br><span class="line">$ nvm install stable	<span class="comment">#2 install Node.js</span></span><br><span class="line">$ npm install -g hexo-cli	<span class="comment">#3 install hexo</span></span><br></pre></td></tr></table></figure>
-<p>Done.</p>
+<a id="more"></a>
+<p>Change your remote’s URL from SSH to HTTPS<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git remote <span class="built_in">set</span>-url origin https://github.com/USERNAME/REPOSITORY.git</span><br></pre></td></tr></table></figure></p>
+<p>Change your remote’s URL from HTTPS to SSH<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git remote <span class="built_in">set</span>-url origin git@github.com:USERNAME/REPOSITORY.git</span><br></pre></td></tr></table></figure></p>
+<p>Reference: <a href="https://help.github.com/articles/changing-a-remote-s-url/" target="_blank" rel="noopener">https://help.github.com/articles/changing-a-remote-s-url/</a></p>
+<h2 id="git-push-without-entering-username-amp-password"><a href="#git-push-without-entering-username-amp-password" class="headerlink" title="git push without entering username &amp; password"></a>git push without entering username &amp; password</h2><h3 id="HTTPS"><a href="#HTTPS" class="headerlink" title="HTTPS"></a>HTTPS</h3><p>For the repo which is cloned from GitHub using HTTPS, use a credential helper to remember username and password.</p>
+<p>With Git for Windows, run the following commands to store credentials:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global credential.helper wincred</span><br></pre></td></tr></table></figure></p>
+<h3 id="SSH"><a href="#SSH" class="headerlink" title="SSH"></a>SSH</h3><p>For the repo which is cloned from GitHub using SSH, use SSH keys. -&gt; <a href="https://help.github.com/articles/generating-an-ssh-key" target="_blank" rel="noopener">Generating an SSH Key</a></p>
+<p>Reference:<a href="https://help.github.com/articles/caching-your-github-password-in-git/#platform-windows" target="_blank" rel="noopener">Caching your GitHub password in Git</a></p>
 
       
     </div>
@@ -462,7 +456,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>Post link:</strong>
-    <a href="https://ryanluoxu.github.io/2017/12/07/Clone-Blog-to-Ubuntu/" title="Clone Blog to Ubuntu">https://ryanluoxu.github.io/2017/12/07/Clone-Blog-to-Ubuntu/</a>
+    <a href="https://ryanluoxu.github.io/2017/12/07/Github-Learning/" title="Github Learning">https://ryanluoxu.github.io/2017/12/07/Github-Learning/</a>
   </li>
   <li class="post-copyright-license">
     <strong>Copyright Notice: </strong>
@@ -477,13 +471,11 @@
       
         <div class="post-tags">
           
-            <a href="/tags/blog/" rel="tag"># blog</a>
+            <a href="/tags/github/" rel="tag"># github</a>
           
-            <a href="/tags/hexo/" rel="tag"># hexo</a>
+            <a href="/tags/git/" rel="tag"># git</a>
           
-            <a href="/tags/ubuntu/" rel="tag"># ubuntu</a>
-          
-            <a href="/tags/migrate/" rel="tag"># migrate</a>
+            <a href="/tags/notes/" rel="tag"># notes</a>
           
         </div>
       
@@ -496,8 +488,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/12/05/Linux-Command/" rel="next" title="Linux Command">
-                <i class="fa fa-chevron-left"></i> Linux Command
+              <a href="/2017/12/07/Clone-Blog-to-Ubuntu/" rel="next" title="Clone Blog to Ubuntu">
+                <i class="fa fa-chevron-left"></i> Clone Blog to Ubuntu
               </a>
             
           </div>
@@ -505,10 +497,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/12/07/Github-Learning/" rel="prev" title="Github Learning">
-                Github Learning <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -683,7 +671,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#upload-project-to-github"><span class="nav-number">1.</span> <span class="nav-text">upload project to github</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#clone-project-to-Ubuntu"><span class="nav-number">2.</span> <span class="nav-text">clone project to Ubuntu</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#installation"><span class="nav-number">3.</span> <span class="nav-text">installation</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Switching-remote-URLs-between-SSH-and-HTTPS"><span class="nav-number">1.</span> <span class="nav-text">Switching remote URLs between SSH and HTTPS</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#git-push-without-entering-username-amp-password"><span class="nav-number">2.</span> <span class="nav-text">git push without entering username & password</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#HTTPS"><span class="nav-number">2.1.</span> <span class="nav-text">HTTPS</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#SSH"><span class="nav-number">2.2.</span> <span class="nav-text">SSH</span></a></li></ol></li></ol></div>
             
 
           </div>
